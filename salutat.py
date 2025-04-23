@@ -1,7 +1,10 @@
 import tkinter as tk
 ventana = tk.Tk()
+ventana.title("Un Saludo")
+ventana.geometry("400x100")
+ventana.wm_iconbitmap("handshake.ico")
 boton1=tk.Button(ventana, text="Saludar")
 boton1.pack()
-etiqueta1=tk.Label(ventana, text="")
+etiqueta1=tk.Label(ventana, text="Hola", fg="green",font="100", bg="red")
 etiqueta1.pack()
 ventana.mainloop()
